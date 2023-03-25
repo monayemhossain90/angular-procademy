@@ -1,0 +1,17 @@
+
+<!-- string interpolation -->
+<h2>{{title}}</h2>
+
+<!-- property binding -->
+<img [src]="image" alt="angular" width="800px" height="500px">
+
+
+
+<div class="search-div">
+    <span><b>Search:</b></span>
+    <!-- event binding -->
+    <input type="text" (input)="changeSearchValue($event)">
+    <!-- Two way data binding -->
+    <input type="text" [(ngModel)]="searchValue">
+    <span>you search for "{{searchValue}}"</span>
+</div>
