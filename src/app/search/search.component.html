@@ -6,8 +6,8 @@
 <img [src]="image" alt="angular" width="800px" height="500px">
 
 
-
-<div class="search-div">
+<!-- ngClass for search-div -->
+<div class="search-div" [ngClass]="{changeBg: searchValue!=''}">
     <span><b>Search:</b></span>
     <!-- event binding -->
     <!-- <input type="text" (input)="changeSearchValue($event)"> -->
