@@ -13,5 +13,6 @@
     <!-- <input type="text" (input)="changeSearchValue($event)"> -->
     <!-- Two way data binding -->
     <input  type="text" [(ngModel)]="searchValue">
+    <!-- ngIf -->
     <span *ngIf="searchValue !='' ">you search for "{{searchValue}}"</span>
 </div>
