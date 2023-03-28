@@ -1,0 +1,12 @@
+.course-container{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 0 auto;
+    
+}
+
+.course-card{
+    width: 33%;
+  
+}

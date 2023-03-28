@@ -6,13 +6,19 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { SearchComponent } from './search/search.component';
 import { ProductsComponent } from './products/products.component';
+import { ContainerComponent } from './container/container.component';
+import { FilterComponent } from './filter/filter.component';
+import { CoursesComponent } from './courses/courses.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     SearchComponent,
-    ProductsComponent
+    ProductsComponent,
+    ContainerComponent,
+    FilterComponent,
+    CoursesComponent
   ],
   imports: [
     BrowserModule,
