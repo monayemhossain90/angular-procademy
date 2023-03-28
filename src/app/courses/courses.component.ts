@@ -27,6 +27,13 @@ export class CoursesComponent {
   return this.courses.filter((course)=>course.type==="premium").length;
  }
 
+ courseCountRadioBtn:string = 'all';
+
+ onFilterRadioBtnChange(data:string){
+  this.courseCountRadioBtn = data;
+  console.log(this.courseCountRadioBtn)
+
+ }
 
 }
 

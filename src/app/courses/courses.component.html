@@ -1,27 +1,37 @@
 <div>
     <app-search></app-search>
-    <app-filter [total]="getTotalCourse()" [free]="getTotalFreeCourse()" [premium]="getTotalPremiumCourse()"></app-filter>
+    <app-filter
+     [total]="getTotalCourse()" 
+     [free]="getTotalFreeCourse()"
+    [premium]="getTotalPremiumCourse()"
+    (filterRadioBtnSelectionChange)="onFilterRadioBtnChange($event)"
+    >
+    
+    </app-filter>
 </div>
 
-<div class="course-container" *ngFor="let course of courses">
-<div class="course-card">
-    <div>
-        <img [src]="course.image" alt="photo" style="width:220px;height: 140px;">
-    </div>
-    <div class="course-name">
-        <h2> Course Name: {{course.name}}</h2>
-    </div>
+<ng-container *ngFor="let course of courses"  >
+    <div class="course-container" *ngIf="courseCountRadioBtn ==='all'||courseCountRadioBtn==='course.type'">
+        <div class="course-card">
+            <div>
+                <img [src]="course.image" alt="photo" style="width:220px;height: 140px;">
+            </div>
+            <div class="course-name">
+                <h2> Course Name: {{course.name}}</h2>
+            </div>
+        
+            <div class="course-author">
+                    <h4> Course Author : {{course.author}}</h4>
+            </div>
+        
+            <div class="course-price">
+                <h3> Course Price : {{course.price}}</h3>
+            </div>
+            <div class="course-buttons">
+                <button class="btn btn-buy">Buy Now</button>
+                <button class="btn btn-buy">Course Details</button>
+            </div>
+        </div>
+        </div>
+</ng-container>
 
-    <div class="course-author">
-            <h4> Course Author : {{course.author}}</h4>
-    </div>
-
-    <div class="course-price">
-        <h3> Course Price : {{course.price}}</h3>
-    </div>
-    <div class="course-buttons">
-        <button class="btn btn-buy">Buy Now</button>
-        <button class="btn btn-buy">Course Details</button>
-    </div>
-</div>
-</div>

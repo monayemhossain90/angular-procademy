@@ -22,7 +22,7 @@ import { CoursesComponent } from './courses/courses.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+  FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
