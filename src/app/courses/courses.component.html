@@ -10,8 +10,8 @@
     </app-filter>
 </div>
 
-<ng-container *ngFor="let course of courses"  >
-    <div class="course-container" *ngIf="courseCountRadioBtn ==='all'||courseCountRadioBtn==='course.type'">
+<ng-container *ngFor="let course of courses" class="wrapper" >
+    <div class="course-container" *ngIf="courseCountRadioBtn ==='all'||courseCountRadioBtn===course.type">
         <div class="course-card">
             <div>
                 <img [src]="course.image" alt="photo" style="width:220px;height: 140px;">

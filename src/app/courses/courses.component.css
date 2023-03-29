@@ -1,12 +1,24 @@
+
+
 .course-container{
-    display: flex;
-    flex-direction: row;
-    width: 90%;
-    margin: 0 auto;
+ display: inline-flex;
+
     
 }
 
 .course-card{
-    width: 33%;
+    width: 220px;
+    height: 320px;
+    margin: 40px 40px;
+    background-color: #F8F9F9;
+    
   
+}
+.course-name, .course-author, .course-price{
+    text-align: center;
+}
+
+.course-buttons{
+    width: 140px;
+    display: flex;
 }

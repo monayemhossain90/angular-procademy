@@ -13,6 +13,8 @@ export class CoursesComponent {
     {id:3,name:"C++", author:"Cormen",image:"../../assets/node.jpg",price:"50$",type:"premium"},
     {id:4,name:"Java", author:"Cormen",image:"../../assets/react.jpg",price:"50$",type:"free"},
     {id:5,name:"Rubi", author:"Cormen",image:"../../assets/react.jpg",price:"50$",type:"free"},
+    {id:6,name:"javaScript", author:"Cormen",image:"../../assets/react.jpg",price:"50$",type:"pre"},
+    {id:7,name:"Vue", author:"Cormen",image:"../../assets/react.jpg",price:"50$",type:"free"},
  ]
 
  getTotalCourse(){
