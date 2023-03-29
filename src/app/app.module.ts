@@ -9,6 +9,7 @@ import { ProductsComponent } from './products/products.component';
 import { ContainerComponent } from './container/container.component';
 import { FilterComponent } from './filter/filter.component';
 import { CoursesComponent } from './courses/courses.component';
+import { CourseSearchComponent } from './course-search/course-search.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CoursesComponent } from './courses/courses.component';
     ProductsComponent,
     ContainerComponent,
     FilterComponent,
-    CoursesComponent
+    CoursesComponent,
+    CourseSearchComponent
   ],
   imports: [
     BrowserModule,

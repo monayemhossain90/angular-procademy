@@ -30,12 +30,17 @@ export class CoursesComponent {
  }
 
  courseCountRadioBtn:string = 'all';
+ searchText:string = "";
 
  onFilterRadioBtnChange(data:string){
   this.courseCountRadioBtn = data;
-  console.log(this.courseCountRadioBtn)
-
+ 
  }
+//  for search 
+onSearchTextEnter(searchValue:string){
+  this.searchText = searchValue;
+  console.log(this.searchText)
+}
 
 }
 
