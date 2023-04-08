@@ -3,16 +3,15 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { setBackgroundDirective } from './customDirective/setBackground.directive';
 
-import { LifestyleHookComponent } from './lifestyle-hook/lifestyle-hook.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-
-    LifestyleHookComponent,
- 
+    setBackgroundDirective 
   ],
   imports: [
     BrowserModule,
