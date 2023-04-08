@@ -3,13 +3,15 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { ProductComponent } from './product/product.component';
+
+import { LifestyleHookComponent } from './lifestyle-hook/lifestyle-hook.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProductComponent,
+
+    LifestyleHookComponent,
  
   ],
   imports: [

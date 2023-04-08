@@ -1,17 +1,7 @@
 <div class="container">
-    <h2> ng container practice</h2>
-    <div class="more-products">
-        <app-product>  
-            <h2 class="title">this is iphone</h2>
-            <button class="btn btn-more">Show More Iphone</button>
-        </app-product>
-        <app-product>
-             <h2 class="title">this is redmi</h2>
-             <button class="btn btn-more">Show More redmi</button>
-        </app-product>
-        <app-product>
-             <h2 class="title">this is samsung</h2>
-             <button class="btn btn-more">Show More samsung</button>
-        </app-product>
-    </div>
+    <h2> {{title }} lifestyle hook</h2>
+    <input type="text" #input>
+    <button (click)="onSubmit(input)">Submit</button>
+   
+    <app-lifestyle-hook [value] = "inputText"></app-lifestyle-hook>
 </div>
