@@ -5,7 +5,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { HighlightDirective } from './customDirective/highlight.directive';
 import { HoverDirective } from './customDirective/hover.directive';
-import { BetterHighlightDirectiveDirective } from './better-highlight-directive.directive';
+import { BetterHighlightDirectiveDirective } from './customDirective/better-highlight-directive.directive';
+
 
 
 
